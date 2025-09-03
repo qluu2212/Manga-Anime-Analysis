@@ -13,30 +13,55 @@ The workflow follows the **ELT pattern**:
 
 ## 🏗 Project Structure  
 project/
+
 ├── anime_manga/ # dbt project
+
 ├── analyses/ # Custom dbt analysis queries
+
 ├── logs/ # dbt logs
+
 ├── macros/ # dbt macros
+
 ├── models/ # dbt models (SQL transformations)
+
 │ ├── bronze/ # Raw staging models
+
 │ ├── silver/ # Cleaned models
+
 │ └── gold/ # Aggregated analytics models
+
 ├── seeds/ # Seed data (CSV for dbt)
+
 ├── snapshots/ # Snapshots for slowly changing dimensions
+
 ├── target/ # dbt compiled output
+
 ├── etl_pipeline/ # Orchestration with Dagster
+
 │ └── dagster_dbt_assets.py # Dagster assets + dbt integration
+
 ├── raw.datasets/ # Raw input datasets (CSV files)
+
 │ ├── MAL-anime.csv
+
 │ └── MAL-manga.csv
+
 ├── postgresql/ # Database setup
+
 │ └── logs/ # Database logs
+
 ├── docker-compose.yaml # Dockerized Postgres service
+
 ├── psql_schemas.sql # SQL schema definitions
+
 ├── dataset_download.py # Script to download raw datasets
+
 ├── requirements.txt # Python dependencies
+
 ├── profiles.yml # dbt profiles for Postgres
+
 ├── dbt_project.yml # dbt project configuration
+
 └── README.md # Project documentation
 
 ## Setup

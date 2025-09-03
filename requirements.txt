@@ -1,0 +1,18 @@
+# Core
+dagster
+dagster-dbt
+dbt-core
+dbt-postgres
+sqlalchemy
+psycopg2-binary
+
+# Data processing
+pandas
+numpy
+
+# For environment management
+python-dotenv
+
+# Optional: testing & utils
+pytest
+requests

@@ -15,14 +15,23 @@ The workflow follows the **ELT pattern**:
 project/
 
 ├── anime_manga/ # dbt project
+
 ├── analyses/ # Custom dbt analysis queries
+
 ├── logs/ # dbt logs
+
 ├── macros/ # dbt macros
+
 ├── models/ # dbt models (SQL transformations)
+
 │ ├── bronze/ # Raw staging models
+
 │ ├── silver/ # Cleaned models
+
 │ └── gold/ # Aggregated analytics models
+
 ├── seeds/ # Seed data (CSV for dbt)
+
 ├── snapshots/ # Snapshots for slowly changing dimensions
 
 ├── target/ # dbt compiled output
